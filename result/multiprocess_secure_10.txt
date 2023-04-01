@@ -1,0 +1,56 @@
+.\abs -r -n 1000 -c 10 -s 99999999 https://172.16.16.101:9443/
+This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            9443
+SSL/TLS Protocol:       TLSv1.3,TLS_AES_256_GCM_SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      10
+Time taken for tests:   249.400 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      147000 bytes
+HTML transferred:       35000 bytes
+Requests per second:    4.01 [#/sec] (mean)
+Time per request:       2494.004 [ms] (mean)
+Time per request:       249.400 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 1573 3864.6    579   33498
+Processing:     0  798 545.5    695    2885
+Waiting:        0  771 529.4    671    2763
+Total:         11 2370 3998.4   1520   34920
+
+Percentage of the requests served within a certain time (ms)
+  50%   1520
+  66%   2109
+  75%   2543
+  80%   2968
+  90%   4300
+  95%   6035
+  98%  16799
+  99%  33276
+ 100%  34920 (longest request)

@@ -1,0 +1,63 @@
+.\abs -r -n 1000 -c 10 -s 99999999 https://172.16.16.101:8443/
+This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 700 requests
+Completed 800 requests
+SSL handshake failed (5).
+SSL handshake failed (5).
+Completed 900 requests
+SSL handshake failed (5).
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.3,TLS_AES_256_GCM_SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+TLS Server Name:        172.16.16.101
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      10
+Time taken for tests:   396.338 seconds
+Complete requests:      1000
+Failed requests:        5
+   (Connect: 0, Receive: 0, Length: 5, Exceptions: 0)
+Total transferred:      146265 bytes
+HTML transferred:       34825 bytes
+Requests per second:    2.52 [#/sec] (mean)
+Time per request:       3963.383 [ms] (mean)
+Time per request:       396.338 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.36 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 1855 3995.1    886   65045
+Processing:     4 1734 9190.2    958  133445
+Waiting:        4 1044 824.1    922    5869
+Total:         12 3589 9998.1   2068  133445
+
+Percentage of the requests served within a certain time (ms)
+  50%   2068
+  66%   2848
+  75%   3501
+  80%   3862
+  90%   5799
+  95%   9029
+  98%  18761
+  99%  33430
+ 100%  133445 (longest request)
